@@ -1,0 +1,108 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+  height: 60px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 15px;
+}
+/* HowdyDoo Logo*/
+.logo{
+	margin-bottom: 0px;
+	margin-left: 50px;
+	margin-right: 40px;
+	margin-top: 40px;
+	padding-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 0;
+}
+@media screen and (max-width:640px){
+	.logo{margin-left: 25px;margin-top: 5px}
+}
+
+.logo img{
+  width: 540px;
+  height: 166px;
+}
+/* Hogarh and Ogilvy */
+.footer_logo{
+	margin: 5px 0 0;
+	padding-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 0;
+}
+@media screen and (max-width:640px){
+	.footer_logo{margin-left: 0px;margin-top: 5px}
+}
+
+.footer img{
+  width: 207px;
+  height: 29px;
+}
+/* Jumbotron */
+.jumbotron img {
+  width: 85%;
+  height: auto;
+}
+@media screen and (max-width:1024px){
+	.jumbotron img{width:85%}
+}
+@media screen and (max-width: 640px) {
+	.jumbotron img{width:100%}
+}
+@media screen and (max-width: 768px) {
+	.jumbotron img{width:100%}
+}
+@media screen and (max-width:810px){
+	.jumbotron img{width:100%}
+}
+@media screen and (max-width:992px){
+	.jumbotron img{width:85%}
+}
+
+/* Gallery */
+ul {         
+  padding:0;
+  margin:0 !important;
+  clear: both;
+}
+ul li {     
+  list-style:none;
+  margin:0px;
+  padding:0;           
+}
+ul li img {
+  cursor: pointer;
+}
+
+/*Form */
+#buttonGroupForm .btn-group .form-control-feedback {
+    top: 0;
+    right: -30px;
+}

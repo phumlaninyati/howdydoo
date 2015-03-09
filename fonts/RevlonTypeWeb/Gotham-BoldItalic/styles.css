@@ -1,0 +1,9 @@
+
+@font-face {
+	font-family: 'Gotham-BoldItalic';
+	src: url('Gotham-BoldItalic.eot?') format('eot'), 
+	     url('Gotham-BoldItalic.otf')  format('opentype'),
+	     url('Gotham-BoldItalic.woff') format('woff'), 
+	     url('Gotham-BoldItalic.ttf')  format('truetype'),
+	     url('Gotham-BoldItalic.svg#Gotham-BoldItalic') format('svg');
+}
