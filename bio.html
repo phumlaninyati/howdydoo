@@ -24,22 +24,22 @@
          <div class="jumbotron">
             <a href="index.html"><img src="img/logo.svg" alt="HOWDYDOO" class="logo" title="HOWDYDOO"></a>
          </div>
-        <div class="row" style="background:#FFF;">
-              <div class="col-md-5"><img src="img/redworks/louise-kotze.png"></div>
+   <div class="row" style="background:#FFF;">
+              <div class="col-md-5"><img src="img/redworks/Merle-Bennett.png" width="286" height="291"></div>
           <div class="col-md-7" style="margin-top:15px;">
-            <form role="form" action="insert.php" id="staff_form" method="post">
+            <form role="form" action="insert.php" id="staff_form" method="post" onsubmit="return muModal(this)">
                <div class="form-group">
                  <label class="col-xs-3 control-label">
                  <h4>Name:</h4></label>
-                  <input type="text" class="form-control" id="text_field" name="name" value="name" required/>
+                  <input type="text" class="form-control" id="text_field" name="name" required/>
                </div>
                <div class="form-group">
                   <label class="col-xs-3 control-label"><h4>AKA:</h4></label>
-                  <input type="text" class="form-control" id="text_field" name="aka" value="aka" required/>
+                  <input type="text" class="form-control" id="text_field" name="aka" required/>
                </div>
                <div class="form-group">
                   <label class="col-xs-3 control-label"><h4>Job Tittle:</h4></label>
-                  <input type="text" class="form-control" id="text_field" value="tittle" name="tittle" required/>
+                  <input type="text" class="form-control" id="text_field" name="tittle" required/>
                </div>
                <div class="form-group">
         <label class="col-xs-3 control-label"><h4>Location:</h4></label>
@@ -58,14 +58,41 @@
         <div class="col-xs-12" style="margin-top:20px;">
                   <label for="comment"><h4>More about me:</h4></label>
                    <textarea class="form-control" rows="5" id="comment" name="bio" required></textarea>
-               </div>
-               </div>
+          </div>
+              </div>
                 <div class="form-group">
-               <button type="submit" class="btn btn-default" id="submit">Submit</button>
+               <button type="submit" class="btn btn-default" id="submit" data-toggle="modal" data-target="#myModal">Submit</button>
                </div>
             </form>
-            </div>
-      </div>
+     </div>
+            
+            <!-- Button trigger modal 
+<button class="btn btn-primary btn-lg" data-toggle="modal" 
+   data-target="#myModal" type="submit">
+   Launch demo modal
+</button>-->
+            
+            <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" 
+   aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" 
+               data-dismiss="modal" aria-hidden="true">
+                  &times;
+            </button>
+            <h4 class="modal-title" id="myModalLabel">
+              THANK YOU!
+            </h4>
+         </div>
+         <div class="modal-body">
+          Now watch your inbox. we’ll be sending you a pic and a blurb of your new favourite colleague.
+         </div>
+      </div><!-- /.modal-content -->
+</div><!-- /.modal -->
+            
+     </div>
       </div>
       <!-- Footer -->
       <div id="footer">
