@@ -9,7 +9,9 @@ body {
   height: 100%;
   /* The html and body elements cannot have any padding or margin. */
 }
-
+a, a:active, a:focus {
+outline: none;
+}
 /* Wrapper for page content to push down footer */
 #wrap {
   min-height: 100%;
@@ -101,8 +103,22 @@ ul li img {
   cursor: pointer;
 }
 
+.col-md-4 img{
+	width: 100%;
+	height: auto;
+	}
+
 /*Form */
 #buttonGroupForm .btn-group .form-control-feedback {
     top: 0;
     right: -30px;
 }
+#text_field {
+	width: 75%;
+	}
+#comment {
+	height:100px;
+	}
+#submit {
+	margin: 10px 0 0 0;
+	}

@@ -24,42 +24,45 @@
          <div class="jumbotron">
             <a href="index.html"><img src="img/logo.svg" alt="HOWDYDOO" class="logo" title="HOWDYDOO"></a>
          </div>
-         <div class="row">
-            <div class="col-sm-12" align="right">
-               <p>Do something below</p>
-            </div>
-             <div class="col-sm-8">
-            <form role="form">
+        <div class="row" style="background:#FFF;">
+              <div class="col-md-5"><img src="img/redworks/louise-kotze.png"></div>
+          <div class="col-md-7" style="margin-top:15px;">
+            <form role="form" action="insert.php" id="staff_form" method="post">
                <div class="form-group">
-                 <label class="col-xs-3 control-label">Job AKA:</label>
-                  <input type="text" class="form-control" id="email">
+                 <label class="col-xs-3 control-label">
+                 <h4>Name:</h4></label>
+                  <input type="text" class="form-control" id="text_field" name="name" value="name" required/>
                </div>
                <div class="form-group">
-                  <label class="col-xs-3 control-label">Job AKA:</label>
-                  <input type="text" class="form-control" id="email">
+                  <label class="col-xs-3 control-label"><h4>AKA:</h4></label>
+                  <input type="text" class="form-control" id="text_field" name="aka" value="aka" required/>
                </div>
                <div class="form-group">
-                  <label class="col-xs-3 control-label">Job Tittle:</label>
-                  <input type="email" class="form-control" id="email">
+                  <label class="col-xs-3 control-label"><h4>Job Tittle:</h4></label>
+                  <input type="text" class="form-control" id="text_field" value="tittle" name="tittle" required/>
                </div>
                <div class="form-group">
-        <label class="col-xs-3 control-label">Location</label>
+        <label class="col-xs-3 control-label"><h4>Location:</h4></label>
         <div class="col-xs-9">
             <div class="btn-group" data-toggle="buttons">
                 <label class="btn btn-default">
-                    <input type="radio" name="gender" value="male" /> Hogarth
+                    <input type="radio" name="location" value="hogarth" required/> Hogarth
                 </label>
                 <label class="btn btn-default">
-                    <input type="radio" name="gender" value="female" /> Redworks
+                    <input type="radio" name="location" value="redworks" required/> Redworks
                 </label>
             </div>
         </div> 
         </div>
-               <div class="form-group">
-                  <label for="comment">More about me:</label>
-                   <textarea class="form-control" rows="5" id="comment"></textarea>
+        <div class="form-group">
+        <div class="col-xs-12" style="margin-top:20px;">
+                  <label for="comment"><h4>More about me:</h4></label>
+                   <textarea class="form-control" rows="5" id="comment" name="bio" required></textarea>
                </div>
-               <button type="submit" class="btn btn-default">Submit</button>
+               </div>
+                <div class="form-group">
+               <button type="submit" class="btn btn-default" id="submit">Submit</button>
+               </div>
             </form>
             </div>
       </div>
@@ -76,5 +79,6 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
       <!-- Include all compiled plugins (below), or include individual files as needed -->
       <script src="js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="js/validation.js"></script>
    </body>
 </html>
