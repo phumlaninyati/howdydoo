@@ -42,23 +42,8 @@ $('#staff_form').validate({
         }
     });
 
-function muModal(staff_form)
-{
-  var form=staff_form,
-      modal=$('<div/>', {
-    'id':'alert',
-  })
-  .dialog({
-    'title':'Iframe in a modal window',
-    'modal':true,
-    'width':350,
-    'height':'auto',
-    'buttons': {
-      'OK': function() { 
-        $(this).dialog( "close" ); 
-        // do something, maybe call form.submit();
-      }
-     }
-  });
-  return false;
-}
+//if valid then redirect
+  if($valid){
+   header('Location: http://mywebsite.com/otherAction.php');
+   exit();
+  }

@@ -1,32 +1,11 @@
 <?php
-		include('connect.php');				
-		$id = $_GET['id'];		
+	include('connect.php');			
+	include_once("head.php");		
+	$id = $_GET['id'];		
 ?>
-<!DOCTYPE html>
-<html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>HOWDYDOO</title>
-      <!-- My Stylesheet -->
-      <link href="css/stylesheet.css" rel="stylesheet">
-      <!-- Bootstrap -->
-      <link href="css/bootstrap.min.css" rel="stylesheet">
-      <!-- Fonts -->
-      <link rel="stylesheet" href="fonts/RevlonTypeWeb/Gotham-Medium/styles.css">
-      <link rel="stylesheet" href="fonts/RevlonTypeWeb/Gotham-Light/styles.css">
-      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-      <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-      <![endif]-->
-   </head>
-   <body>
       <div class="container">
          <div class="jumbotron">
-            <a href="index.html"><img src="img/logo.svg" alt="HOWDYDOO" class="logo" title="HOWDYDOO"></a>
+           <a href="index.php"><img src="img/logo.svg" alt="HOWDYDOO" class="logo" title="HOWDYDOO"></a>
          </div>
    <div class="row" style="background:#FFF;">
 			  
@@ -43,7 +22,7 @@
 										   $bio =   $row['bio'];
 										   $img =   $row['image'];				
 			?>								  
-          <div class="col-md-5"><img src="<?php echo $path.$img; ?>" width="286" height="291"></div>
+          <div class="col-md-5" style="margin-top:15px;"><img src="<?php echo $path.$img; ?>" width="286" height="291"></div>
           <div class="col-md-7" style="margin-top:15px;">
             <form role="form" action="insert.php" id="staff_form" method="post" onsubmit="return muModal(this)">
                <div class="form-group">
@@ -95,40 +74,13 @@
 			   
             </form>
      </div>
-            
-            <!-- Button trigger modal 
-<button class="btn btn-primary btn-lg" data-toggle="modal" 
-   data-target="#myModal" type="submit">
-   Launch demo modal
-</button>-->
-            
-            <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" 
-   aria-labelledby="myModalLabel" aria-hidden="true">
-   <div class="modal-dialog">
-      <div class="modal-content">
-         <div class="modal-header">
-            <button type="button" class="close" 
-               data-dismiss="modal" aria-hidden="true">
-                  &times;
-            </button>
-            <h4 class="modal-title" id="myModalLabel">
-              THANK YOU!
-            </h4>
-         </div>
-         <div class="modal-body">
-          Now watch your inbox. we’ll be sending you a pic and a blurb of your new favourite colleague.
-         </div>
-      </div><!-- /.modal-content -->
-</div><!-- /.modal -->
-            
-     </div>
+     
       </div>
       <!-- Footer -->
       <div id="footer">
          <div class="container" align="center">
             <p>BROUGHT TO YOU BY<br>
-               <a href="index.html"><img src="img/hogarth_and_ogilvy.svg" alt="HOWDYDOO" class="footer_logo" title="HOWDYDOO"></a>
+              <a href="index.php"><img src="img/hogarth_and_ogilvy.svg" alt="Hogarth &amp; Ogilvy" class="footer_logo" "Hogarth &amp; Ogilvy"></a>
             </p>
          </div>
       </div>
