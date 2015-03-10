@@ -37,11 +37,13 @@
            <ul class="row">
 				<?php
 						$path = "img/redworks/";
-						$image = mysqli_query($conn,"SELECT * FROM staff ORDER BY ID DESC"); 						
-						while($row = mysqli_fetch_array($image))
-						{
-							$id = $row['ID'];
-							$img = $row['image'];
+						$image = mysqli_query($conn,"SELECT * FROM staff ORDER BY ID DESC"); 
+						if($image) { 
+							try {
+									while($row = mysqli_fetch_array($image))
+									{
+										$id = $row['ID'];
+										$img = $row['image'];
 						
 				?>
 				   <li class="col-lg-1 col-md-2 col-sm-3 col-xs-4">
@@ -49,7 +51,15 @@
 							<img src="<?php echo $path.$img; ?>" alt="logo" width="60" height="60"/>
 						</a>
 					</li>
-				<?php } ?>
+				<?php 
+					}
+						}
+						catch(Exception $e)
+						{
+							echo $e;
+						}
+							}							
+				?>
             </ul>
          </div>
       </div>
