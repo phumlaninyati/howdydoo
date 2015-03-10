@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 10, 2015 at 02:11 PM
+-- Generation Time: Mar 10, 2015 at 02:34 PM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -35,14 +35,34 @@ CREATE TABLE IF NOT EXISTS `staff` (
   `bio` varchar(255) DEFAULT NULL,
   `image` varchar(255) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `staff`
 --
 
 INSERT INTO `staff` (`ID`, `name`, `aka`, `location`, `tittle`, `bio`, `image`) VALUES
-(1, 'Ovayo', 'Hovy', 'redworks', 'Developer', 'srbwbweb', '');
+(1, 'Ovayo', 'Hovy', 'redworks', 'Developer', 'srbwbweb', ''),
+(2, NULL, NULL, NULL, NULL, '', 'Phumani-Nyati.png');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `staff_images`
+--
+
+CREATE TABLE IF NOT EXISTS `staff_images` (
+  `name` varchar(100) NOT NULL,
+  `images` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `staff_images`
+--
+
+INSERT INTO `staff_images` (`name`, `images`) VALUES
+('Amy-Novella', 'img/redworks/Amy-Novella.png'),
+('Andrew-van-der-Walt', 'img/redworks/Andrew-van-der-Walt.png');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
