@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 10, 2015 at 08:53 AM
+-- Generation Time: Mar 10, 2015 at 02:11 PM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -33,30 +33,16 @@ CREATE TABLE IF NOT EXISTS `staff` (
   `location` varchar(255) DEFAULT NULL,
   `tittle` varchar(255) DEFAULT NULL,
   `bio` varchar(255) DEFAULT NULL,
+  `image` varchar(255) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=17 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
 -- Dumping data for table `staff`
 --
 
-INSERT INTO `staff` (`ID`, `name`, `aka`, `location`, `tittle`, `bio`) VALUES
-(1, 'scasc', 'CAsca', '0', 'casca', 'acac'),
-(2, 'Ovayo', 'Ovi', '0', 'Developer', 'Developer'),
-(3, 'Ovayo', 'Ovi', '0', 'Developer', 'tester'),
-(4, 'Ovayo', 'Ovi', '0', 'Developer', 'tester'),
-(5, 'Ovayo', 'Ovi', '0', 'Developer', 'tester'),
-(6, 'Ovayo', 'Ovi', '0', 'Developer', 'tester'),
-(7, 'Ova', 'Ovi', '0', 'Dev', 'asvas'),
-(8, 'Ova', 'Ovi', '0', 'Dev', 'asvas'),
-(9, 'Ovy', 'Ovay', '0', 'Developer', 'vasva'),
-(10, 'Ovy', 'Ovay', '0', 'Developer', 'vasva'),
-(11, 'Ovy', 'Ovay', '0', 'Dev', 'avasvv'),
-(12, 'Ovy', 'Ovay', '0', 'Dev', 'avasvv'),
-(13, 'Ova', 'Ovi', 'redworks', 'Bad', 'Good'),
-(14, 'Ova', 'Ovi', 'redworks', 'Bad', 'Good'),
-(15, 'Ovayo', 'Hovy', 'hogarth', 'Developer Thug', 'Nothing really'),
-(16, 'Ovayo', 'Hovy', 'hogarth', 'Developer Thug', 'Nothing really');
+INSERT INTO `staff` (`ID`, `name`, `aka`, `location`, `tittle`, `bio`, `image`) VALUES
+(1, 'Ovayo', 'Hovy', 'redworks', 'Developer', 'srbwbweb', '');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
