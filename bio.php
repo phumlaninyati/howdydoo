@@ -11,14 +11,15 @@
 			  
 
 			<?php
-						$path = "img/redworks/";
+						$path = "img/staff/";
 						$profile = mysqli_query($conn,"SELECT * FROM staff WHERE ID=$id"); 						
 						if($profile){
 							try {
 									while($row = mysqli_fetch_array($profile)){
-										   $name = 	$row['name'];
-										   $aka =	$row['aka'];
-										   $job =   $row['tittle'];
+										   $name = $row['name'];
+										   $aka = $row['aka'];
+										   $tittle = $row['tittle'];
+										   $location = $row['location'];
 										   $bio =   $row['bio'];
 										   $img =   $row['image'];				
 			?>								  
@@ -36,7 +37,7 @@
                </div>
                <div class="form-group">
                   <label class="col-xs-3 control-label"><h4>Job Tittle:</h4></label>
-                  <input type="text" class="form-control" id="text_field" value="<?php echo $job; ?>" name="tittle" required/>
+                  <input type="text" class="form-control" id="text_field" value="<?php echo $tittle; ?>" name="tittle" required/>
                </div>
                <div class="form-group">
         <label class="col-xs-3 control-label"><h4>Location:</h4></label>
@@ -57,7 +58,8 @@
                    <textarea class="form-control" rows="5" id="comment" name="bio" required><?php echo $bio; ?></textarea>
           </div>
               </div>
-                <div class="form-group">
+                <div class="form-group"> 
+                <input type="hidden" name="id" value="<?php echo $id; ?>"/>
                <button type="submit" class="btn btn-default" id="submit" data-toggle="modal" data-target="#myModal">Submit</button>
                </div>
 			  <?php

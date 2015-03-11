@@ -41,9 +41,3 @@ $('#staff_form').validate({
             $(element).closest('.form-group').removeClass('has-error');
         }
     });
-
-//if valid then redirect
-  if($valid){
-   header('Location: http://mywebsite.com/otherAction.php');
-   exit();
-  }

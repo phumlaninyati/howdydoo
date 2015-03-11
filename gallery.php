@@ -15,7 +15,7 @@
             </div>
            <ul class="row">
 				<?php
-						$path = "img/redworks/";
+						$path = "img/staff/";
 						$image = mysqli_query($conn,"SELECT * FROM staff ORDER BY ID DESC"); 
 						if($image) { 
 							try {
